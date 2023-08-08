@@ -10,3 +10,22 @@ This program automatically creates a fake e-mail with 1secmail.com and uses that
 You need to change this files:
 + Config/channels.txt
 + Config/config.py
+
+You need to create database and this tabels:
+  
+**users Table:**
+
+|Field          |Type       |Null|Key |Default|
+|---------------|-----------|----|----|-------|
+|ID             |varchar(25)|NO  |PRI |NULL   |
+|Name           |varchar(75)|YES |    |NULL   |
+|Username       |varchar(75)|YES |    |NULL   |
+|Step           |varchar(20)|YES |    |NULL   |
+|Created        |datetime   |YES |    |NULL   |
+|Last_Processing|datetime   |YES |    |NULL   |
+
+**settings Table:**
+|Field          |Type       |Null|Key |Default|
+|---------------|-----------|----|----|-------|
+|ID             |varchar(25)|NO  |PRI |NULL   |
+|Type           |varchar(10)|YES |    |NULL   |
