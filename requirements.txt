@@ -1,3 +1,5 @@
+aiohttp
+json5
 pyrogram
 requests
 mysql-connector-python
